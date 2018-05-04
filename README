@@ -1,0 +1,5 @@
+Amiga drivers for K1208 board SPI ports.
+
+Compile with the gcc-2.95 toolchain from 
+git://github.com/cahirwpz/amigaos-cross-toolchain.git
+
