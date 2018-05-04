@@ -1,0 +1,11 @@
+FILENAME=spinet-test
+DIR=build-test
+OBJECTS=nic-test.o spi.o enc28j60.o timer.o interrupt.o
+
+SRCDIRS=. ../common
+INCDIRS=. ../common
+
+EXTRA_CFLAGS=-DDEBUG=3
+
+include ../common/common.mk
+
