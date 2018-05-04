@@ -1,5 +1,22 @@
-Amiga drivers for K1208 board SPI ports.
+Amiga drivers for K1208 board SPI peripherals
 
-Compile with the gcc-2.95 toolchain from 
+(C) 2018 Mike Stirling
+
+Compile on Linux with the gcc-2.95 toolchain from 
 git://github.com/cahirwpz/amigaos-cross-toolchain.git
+
+With the toolchain in the path both drivers can be compiled just by
+typing "make".  The binaries can be found at:
+
+sd/build-device/spisd.device and
+net/build-device/spinet.device
+
+Both of these files should be placed on the Amiga in DEVS:
+
+An example mountfile can be found in the "amiga" directory.  This
+should be placed in DEVS:DOSDrivers for auto-mount on boot, or
+in SYS:Storage/DOSDrivers for on-demand mounting.
+
+The ethernet driver is SANA2 compliant and has been tested with
+Miami.  Configure as a standard SANA2 ethernet device.
 
