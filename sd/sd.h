@@ -23,6 +23,7 @@
 //#include <stdint.h>
 
 #define SD_SECTOR_SIZE		512
+#define SD_SECTOR_SHIFT		9
 
 typedef enum {
 	sdError_OK = 0,
