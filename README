@@ -20,3 +20,10 @@ in SYS:Storage/DOSDrivers for on-demand mounting.
 The ethernet driver is SANA2 compliant and has been tested with
 Miami.  Configure as a standard SANA2 ethernet device.
 
+NOTE
+----
+
+The network driver requires AmigaOS sana2.h to build. It is not shipped
+with this source due to licence incompatibility. Please place a copy
+of the file in 'net' before building.
+
